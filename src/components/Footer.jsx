@@ -40,7 +40,12 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Es Medya. Tüm hakları saklıdır.</p>
+          <p>&copy; 2026 Es Medya. Tüm hakları saklıdır.</p>
+            <p className="footer-credit">
+            <a href="https://vavisoftware.com" target="_blank" rel="noreferrer">
+              Vavi Software
+            </a> tarafından yapılmıştır.
+          </p>
         </div>
       </div>
     </footer>

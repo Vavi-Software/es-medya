@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import PageHeader from '../components/PageHeader'
+import SEO from '../components/SEO'
 
 const stats = [
   { target: 500, suffix: '+', prefix: '', label: 'Mutlu Müşteri' },
@@ -71,6 +72,11 @@ function Hakkimizda() {
 
   return (
     <>
+    <SEO
+  title="Hakkımızda"
+  description="Es Medya olarak profesyonel ekibimizle 8 yılı aşkın deneyimle hizmet veriyoruz."
+  keywords="es medya hakkında, fotoğrafçılık ekibi, profesyonel fotoğrafçı"
+/>
       <PageHeader
         title="Hakkımızda"
         subtitle="Biz kimiz, ne yapıyoruz?"

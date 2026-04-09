@@ -1,8 +1,11 @@
 import { useEffect } from 'react'
 import gsap from 'gsap'
 import PageHeader from '../components/PageHeader'
+import SEO from '../components/SEO'
 
 const hizmetler = [
+
+  
   {
     number: '01',
     icon: 'fas fa-heart',
@@ -47,6 +50,11 @@ function Hizmetler() {
 
   return (
     <>
+     <SEO
+        title="Hizmetler"
+        description="Es Medya profesyonel düğün fotoğrafçılığı, reklam çekimi, sosyal medya içerik üretimi hizmetleri."
+        keywords="düğün fotoğrafçısı, reklam çekimi, sosyal medya, içerik üretimi"
+      />
       <PageHeader
         title="Hizmetlerimiz"
         subtitle="Profesyonel ekibimizle her anınızı en iyi şekilde ölümsüzleştiriyoruz"

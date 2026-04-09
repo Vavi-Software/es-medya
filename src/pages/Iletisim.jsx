@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import gsap from 'gsap'
 import PageHeader from '../components/PageHeader'
+import SEO from '../components/SEO'
 
 const contactInfo = [
   {
@@ -60,6 +61,11 @@ function Iletisim() {
 
   return (
     <>
+    <SEO
+  title="İletişim"
+  description="Es Medya ile iletişime geçin. WhatsApp, telefon ve e-posta ile bize ulaşabilirsiniz."
+  keywords="iletişim, es medya telefon, es medya whatsapp, fotoğrafçı iletişim"
+/>
       <PageHeader
         title="İletişim"
         subtitle="Hizmetlerimiz için hemen iletişime geçin"

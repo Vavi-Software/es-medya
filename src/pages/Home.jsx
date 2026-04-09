@@ -5,6 +5,9 @@ import PortfolioPreview from '../sections/PortfolioPreview'
 import Rakamlar from '../sections/Rakamlar'
 import Yorumlar from '../sections/Yorumlar'
 import ParallaxQuote from '../sections/ParallaxQuote'
+import SEO from '../components/SEO'
+
+
 
 function Home() {
   return (
@@ -21,3 +24,4 @@ function Home() {
 }
 
 export default Home
+

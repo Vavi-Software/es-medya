@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import gsap from 'gsap'
 import PageHeader from '../components/PageHeader'
+import SEO from '../components/SEO'
 
 const portfolioData = [
   { image: '/images/p1.jpg', category: 'dugun', label: 'Düğün' },
@@ -64,8 +65,19 @@ function Portfolio() {
     })
   }
 
-  return (
+  
+      return (
     <>
+      <SEO
+        title="Portfolio"
+        description="Es Medya'nın düğün, reklam ve sosyal medya çalışmalarından seçki."
+        keywords="portfolio, fotoğraf çalışmaları, düğün fotoğrafları, reklam çekimleri"
+      />
+      <PageHeader
+        title="Portfolyo"
+        subtitle="Çalışmalarımızdan bir seçki"
+      />
+      {/* ... geri kalan aynı */}
       <PageHeader
         title="Portfolyo"
         subtitle="Çalışmalarımızdan bir seçki"

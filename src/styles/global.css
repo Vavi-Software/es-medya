@@ -327,7 +327,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .hero-title {
-    font-size: clamp(40px, 7vw, 85px);
+    font-size: clamp(32px, 5vw, 65px);
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 1.05;
