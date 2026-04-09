@@ -73,10 +73,7 @@ function Portfolio() {
         description="Es Medya'nın düğün, reklam ve sosyal medya çalışmalarından seçki."
         keywords="portfolio, fotoğraf çalışmaları, düğün fotoğrafları, reklam çekimleri"
       />
-      <PageHeader
-        title="Portfolyo"
-        subtitle="Çalışmalarımızdan bir seçki"
-      />
+    
       {/* ... geri kalan aynı */}
       <PageHeader
         title="Portfolyo"
