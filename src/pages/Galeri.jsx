@@ -93,8 +93,8 @@ function Galeri() {
     <>
       <SEO
         title="Galeri"
-        description="Es Medya fotoğraf ve video galerisi — etkinlik ve çekimlerden seçkiler."
-        keywords="galeri, fotoğraf galerisi, video, Es Medya"
+        description="Es Medya Ankara fotoğraf ve video galerisi — düğün, etkinlik ve kurumsal çekimlerden örnekler."
+        keywords="Ankara fotoğraf galerisi, düğün fotoğrafları Ankara, video galeri, Es Medya galeri"
       />
       <PageHeader
         title="Galeri"
@@ -180,7 +180,6 @@ function Galeri() {
                       Tarayıcınız video oynatmayı desteklemiyor.
                     </video>
                   </div>
-                  {v.title && <h3 className="galeri-video-title">{v.title}</h3>}
                 </article>
               ))}
             </div>

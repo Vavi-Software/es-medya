@@ -63,8 +63,8 @@ function Iletisim() {
     <>
     <SEO
   title="İletişim"
-  description="Es Medya ile iletişime geçin. WhatsApp, telefon ve e-posta ile bize ulaşabilirsiniz."
-  keywords="iletişim, es medya telefon, es medya whatsapp, fotoğrafçı iletişim"
+  description="Ankara Es Medya iletişim — WhatsApp, telefon ve e-posta ile randevu ve teklif alın."
+  keywords="Ankara fotoğrafçı iletişim, Es Medya telefon, Es Medya WhatsApp, düğün fotoğrafçısı randevu Ankara"
 />
       <PageHeader
         title="İletişim"

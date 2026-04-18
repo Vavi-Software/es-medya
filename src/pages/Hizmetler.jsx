@@ -52,8 +52,8 @@ function Hizmetler() {
     <>
      <SEO
         title="Hizmetler"
-        description="Es Medya profesyonel düğün fotoğrafçılığı, reklam çekimi, sosyal medya içerik üretimi hizmetleri."
-        keywords="düğün fotoğrafçısı, reklam çekimi, sosyal medya, içerik üretimi"
+        description="Ankara'da düğün ve organizasyon fotoğrafçılığı, reklam ve tanıtım çekimleri, sosyal medya içerik üretimi ve video hizmetleri — Es Medya."
+        keywords="Ankara düğün fotoğrafçısı, Ankara reklam çekimi, Ankara sosyal medya ajansı, organizasyon fotoğrafçılığı Ankara, içerik üretimi Ankara"
       />
       <PageHeader
         title="Hizmetlerimiz"

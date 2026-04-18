@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Gerçek alan adınız farklıysa Sitemap satırını güncelleyin veya Vercel ortam değişkeni ile üretim sitemap kullanın.
+Sitemap: https://esmedya.com/sitemap.xml

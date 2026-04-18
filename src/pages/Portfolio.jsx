@@ -70,8 +70,8 @@ function Portfolio() {
     <>
       <SEO
         title="Portfolio"
-        description="Es Medya'nın düğün, reklam ve sosyal medya çalışmalarından seçki."
-        keywords="portfolio, fotoğraf çalışmaları, düğün fotoğrafları, reklam çekimleri"
+        description="Ankara Es Medya portföyü — düğün, reklam ve sosyal medya fotoğraf çalışmalarından seçkiler."
+        keywords="Ankara portföy fotoğraf, düğün fotoğraf çalışmaları Ankara, reklam fotoğraf örnekleri, Es Medya portfolio"
       />
     
       {/* ... geri kalan aynı */}

@@ -928,14 +928,6 @@ button.galeri-foto-btn {
     vertical-align: middle;
 }
 
-.galeri-video-title {
-    padding: 18px 22px 22px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: var(--siyah);
-}
-
 .galeri-lightbox {
     position: fixed;
     inset: 0;

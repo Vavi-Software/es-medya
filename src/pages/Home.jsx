@@ -12,6 +12,11 @@ import SEO from '../components/SEO'
 function Home() {
   return (
     <>
+      <SEO
+        title="Ana Sayfa"
+        description="Ankara merkezli Es Medya ile düğün, organizasyon, reklam ve sosyal medya için profesyonel fotoğraf ve video. Anıları ölümsüzleştiriyoruz."
+        keywords="Ankara fotoğrafçı, Ankara düğün fotoğrafçısı, Ankara organizasyon çekimi, Ankara reklam fotoğrafçısı, Es Medya, profesyonel fotoğrafçı Ankara"
+      />
       <Hero />
       <Marquee />
       <CalismaSureci />

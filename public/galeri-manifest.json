@@ -83,25 +83,10 @@
     "SDMO4958 kopya 2.jpg"
   ],
   "videos": [
-    {
-      "src": "/videolar/Video/AtaFırın01.mp4",
-      "title": "Ata Fırın"
-    },
-    {
-      "src": "/videolar/Video/Carsuite1.mp4",
-      "title": "Carsuite"
-    },
-    {
-      "src": "/videolar/Video/EsMedya.mp4",
-      "title": "Es Medya"
-    },
-    {
-      "src": "/videolar/Video/EsMedya6.mp4",
-      "title": "Es Medya 6"
-    },
-    {
-      "src": "/videolar/Video/WonderFull.mp4",
-      "title": "Wonder Full"
-    }
+    { "src": "/videolar/Video/AtaFırın01.mp4" },
+    { "src": "/videolar/Video/Carsuite1.mp4" },
+    { "src": "/videolar/Video/EsMedya.mp4" },
+    { "src": "/videolar/Video/EsMedya6.mp4" },
+    { "src": "/videolar/Video/WonderFull.mp4" }
   ]
 }

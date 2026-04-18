@@ -74,8 +74,8 @@ function Hakkimizda() {
     <>
     <SEO
   title="Hakkımızda"
-  description="Es Medya olarak profesyonel ekibimizle 8 yılı aşkın deneyimle hizmet veriyoruz."
-  keywords="es medya hakkında, fotoğrafçılık ekibi, profesyonel fotoğrafçı"
+  description="Ankara'da faaliyet gösteren Es Medya — profesyonel fotoğraf ve video ekibi, 8+ yıl deneyim, düğün ve kurumsal çekim."
+  keywords="Ankara fotoğraf stüdyosu, Es Medya hakkında, profesyonel fotoğraf ekibi Ankara"
 />
       <PageHeader
         title="Hakkımızda"
