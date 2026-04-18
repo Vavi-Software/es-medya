@@ -7,6 +7,16 @@ function fotoUrl(name) {
   return `${import.meta.env.BASE_URL}fotolar/${encodeURIComponent(name)}`
 }
 
+function videoUrl(publicPath) {
+  if (!publicPath) return ''
+  if (/^https?:\/\//i.test(publicPath)) return publicPath
+  const base = import.meta.env.BASE_URL.endsWith('/')
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`
+  const clean = publicPath.startsWith('/') ? publicPath.slice(1) : publicPath
+  return base + clean.split('/').map((seg) => encodeURIComponent(seg)).join('/')
+}
+
 function Galeri() {
   const [photos, setPhotos] = useState([])
   const [videos, setVideos] = useState([])
@@ -165,7 +175,7 @@ function Galeri() {
                       playsInline
                       preload="metadata"
                       poster={v.poster || undefined}
-                      src={v.src}
+                      src={videoUrl(v.src)}
                     >
                       Tarayıcınız video oynatmayı desteklemiyor.
                     </video>
