@@ -8,6 +8,7 @@ import CustomCursor from './components/CustomCursor'
 import Home from './pages/Home'
 import Hizmetler from './pages/Hizmetler'
 import Portfolio from './pages/Portfolio'
+import Galeri from './pages/Galeri'
 import Hakkimizda from './pages/Hakkimizda'
 import Iletisim from './pages/Iletisim'
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/hizmetler" element={<Hizmetler />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/galeri" element={<Galeri />} />
         <Route path="/hakkimizda" element={<Hakkimizda />} />
         <Route path="/iletisim" element={<Iletisim />} />
       </Routes>

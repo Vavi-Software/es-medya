@@ -4,6 +4,7 @@ const footerLinks = [
   { path: '/', label: 'Ana Sayfa' },
   { path: '/hizmetler', label: 'Hizmetler' },
   { path: '/portfolio', label: 'Portfolio' },
+  { path: '/galeri', label: 'Galeri' },
   { path: '/hakkimizda', label: 'Hakkımızda' },
   { path: '/iletisim', label: 'İletişim' },
 ]
