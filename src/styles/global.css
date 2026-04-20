@@ -917,15 +917,89 @@ button.galeri-foto-btn {
 
 .galeri-video-frame {
     position: relative;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 9 / 16;
     background: var(--siyah);
+}
+
+.galeri-video-frame--horizontal {
+    aspect-ratio: 16 / 9;
+}
+
+.galeri-video-frame--vertical {
+    aspect-ratio: 9 / 16;
+}
+
+.galeri-video-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.78) 0%,
+        rgba(0, 0, 0, 0.18) 55%,
+        transparent 100%
+    );
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.galeri-video-meta {
+    width: 100%;
+    max-width: 520px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(0, 0, 0, 0.38);
+    color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 18px 55px rgba(0,0,0,0.28);
+}
+
+.galeri-video-title {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.95);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.galeri-video-desc {
+    margin-top: 6px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .galeri-video-frame video {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     vertical-align: middle;
+}
+
+.galeri-video-card:hover .galeri-video-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (hover: none) {
+    .galeri-video-overlay {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .galeri-lightbox {

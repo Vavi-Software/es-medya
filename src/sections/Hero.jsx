@@ -40,8 +40,8 @@ function Hero() {
         </h1>
         <p className="hero-subtitle">Düğün · Reklam · Sosyal Medya · İçerik Üretimi</p>
         <div className="hero-buttons">
-          <Link to="/portfolio" className="btn-primary">
-            <span>Portfolyoyu Gör</span>
+          <Link to="/galeri" className="btn-primary">
+            <span>Galeriyi Gör</span>
             <i className="fas fa-arrow-right"></i>
           </Link>
           <Link to="/iletisim" className="btn-secondary">

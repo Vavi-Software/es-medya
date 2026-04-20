@@ -17,6 +17,35 @@ function videoUrl(publicPath) {
   return base + clean.split('/').map((seg) => encodeURIComponent(seg)).join('/')
 }
 
+function videoLabel(video, index) {
+  if (video?.title) return String(video.title)
+  const src = typeof video?.src === 'string' ? video.src : ''
+  const file = src.split('/').pop() || ''
+  const withoutExt = file.replace(/\.[a-z0-9]+$/i, '')
+  const normalized = withoutExt
+    .replace(/[_-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+  return normalized || `Video ${index + 1}`
+}
+
+function videoTitle(video, index) {
+  const base = videoLabel(video, index)
+  if (/^es\s*medya/i.test(base)) return 'Es Medya'
+  return base
+}
+
+function videoDescription(video, index) {
+  const base = videoLabel(video, index)
+  if (/^es\s*medya/i.test(base)) return 'Es Medya Düğün Çekimi'
+  return `${videoTitle(video, index)} Çekimi`
+}
+
+function isHorizontalVideo(video) {
+  const src = typeof video?.src === 'string' ? video.src : ''
+  return /EsMedya6\.mp4$/i.test(src)
+}
+
 function Galeri() {
   const [photos, setPhotos] = useState([])
   const [videos, setVideos] = useState([])
@@ -169,7 +198,17 @@ function Galeri() {
             <div className="galeri-video-grid">
               {videos.map((v, i) => (
                 <article className="galeri-video-card" key={v.src || i}>
-                  <div className="galeri-video-frame">
+                  <div
+                    className={`galeri-video-frame ${
+                      isHorizontalVideo(v) ? 'galeri-video-frame--horizontal' : 'galeri-video-frame--vertical'
+                    }`}
+                  >
+                    <div className="galeri-video-overlay" aria-hidden>
+                      <div className="galeri-video-meta">
+                        <h3 className="galeri-video-title">{videoTitle(v, i)}</h3>
+                        <p className="galeri-video-desc">{videoDescription(v, i)}</p>
+                      </div>
+                    </div>
                     <video
                       controls
                       playsInline

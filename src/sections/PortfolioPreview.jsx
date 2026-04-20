@@ -59,8 +59,8 @@ function PortfolioPreview() {
         </div>
 
         <div className="portfolio-preview-footer">
-          <Link to="/portfolio" className="btn-primary">
-            <span>Tüm Çalışmalar</span>
+          <Link to="/galeri" className="btn-primary">
+            <span>Tüm Galeri</span>
             <i className="fas fa-arrow-right"></i>
           </Link>
         </div>
