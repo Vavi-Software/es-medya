@@ -1556,6 +1556,31 @@ button.galeri-foto-btn {
 /* ================================================
    FLOATING WHATSAPP
    ================================================ */
+.floating-yt {
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    width: 60px; height: 60px;
+    background: #0a0a0a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+    transition: var(--transition);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.floating-yt i { font-size: 26px; color: #ff0033; }
+.floating-yt:hover {
+    transform: scale(1.08);
+    background: #ff0033;
+    border-color: #ff0033;
+    box-shadow: 0 10px 30px rgba(255, 0, 51, 0.28);
+}
+.floating-yt:hover i { color: var(--beyaz); }
+
 .floating-wp {
     position: fixed;
     bottom: 30px;
@@ -1687,6 +1712,7 @@ button.galeri-foto-btn {
     .footer-content { flex-direction: column; text-align: center; }
     .footer-links { justify-content: center; }
     .floating-wp { bottom: 20px; right: 20px; width: 54px; height: 54px; }
+    .floating-yt { bottom: 20px; right: 80px; width: 54px; height: 54px; }
     .back-to-top { right: 80px; bottom: 20px; }
     .parallax-quote { padding: 80px 0; }
     .section-header { margin-bottom: 50px; }
