@@ -25,6 +25,7 @@ function videoLabel(video, index) {
   const normalized = withoutExt
     .replace(/[_-]+/g, ' ')
     .replace(/\s+/g, ' ')
+    .replace(/\d+$/g, '')
     .trim()
   return normalized || `Video ${index + 1}`
 }
